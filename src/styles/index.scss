@@ -1,0 +1,49 @@
+@import './variables.scss';
+@import './reset.scss';
+@import './naive.scss';
+
+.flex-container {
+  display: flex;
+  &.c-c {
+    justify-content: center;
+    align-items: center;
+  }
+  &.fe-c {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &.sb-c {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.sa-c {
+    justify-content: space-around;
+    align-items: center;
+  }
+  &.se-c {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &.sb-fs {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.page-container,
+.full-container {
+  position: relative;
+  height: 100%;
+  &.full {
+    margin: -0.24rem;
+    height: calc(100% + 0.48rem);
+  }
+}
+
+// 单行居中，多行左对齐
+.text-container {
+  text-align: center;
+  > * {
+    display: inline-block;
+    text-align: left;
+  }
+}

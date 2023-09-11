@@ -1,0 +1,29 @@
+.layout-header {
+  height: 0.64rem;
+  z-index: 11;
+}
+.layout-content {
+  height: 100vh;
+  padding-top: 0.64rem;
+  padding-bottom: 0.32rem;
+}
+.layout-footer {
+  height: 0.32rem;
+}
+.settings-btn {
+  position: fixed;
+  right: -0.02rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--primary-color);
+  font-size: 0.24rem;
+  color: #fff;
+  border-radius: 0.1rem 0 0 0.1rem;
+  cursor: pointer;
+  z-index: 200;
+}

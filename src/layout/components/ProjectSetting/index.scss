@@ -1,0 +1,35 @@
+.n-divider {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.setting-item {
+  padding: 0.04rem 0;
+  .setting-item-title {
+    width: 1.6rem;
+  }
+  .setting-item-action {
+    :deep(.n-color-picker) {
+      width: 0.22rem;
+      height: 0.22rem;
+      .n-color-picker-trigger__value {
+        display: none;
+      }
+    }
+  }
+  &.theme-switch {
+    .n-switch {
+      ::v-deep(.n-switch__rail) {
+        background-color: #000e1c;
+      }
+    }
+  }
+  .setting-item-style {
+    text-align: center;
+    .setting-item-style-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+}
